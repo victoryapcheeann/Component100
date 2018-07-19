@@ -1,0 +1,28 @@
+.Button {
+  text-align: center;
+}
+
+.Button-logo {
+  animation: Button-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.Button-header {
+  background-color: red;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.Button-title {
+  font-size: 1.5em;
+}
+
+.Button-intro {
+  font-size: large;
+}
+
+@keyframes Button-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
