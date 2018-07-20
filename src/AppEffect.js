@@ -23,6 +23,7 @@ var randomNumber = Math.floor(Math.random()*effectArray.length);
 var FinalEffect = effectArray[randomNumber]
 
 var AppEffect = ({children}) => (
+  
   <FinalEffect>
     <div>{children}</div>
   </FinalEffect>

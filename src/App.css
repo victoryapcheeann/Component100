@@ -1,19 +1,28 @@
-.cross-fade-leave {
-  opacity: 1;
-}
-.cross-fade-leave.cross-fade-leave-active {
-  opacity: 0;
-  transition: opacity 1s ease-in;
-}
-
-.cross-fade-enter {
-  opacity: 0;
-}
-.cross-fade-enter.cross-fade-enter-active {
-  opacity: 1;
-  transition: opacity 1s ease-in;
+.rowStyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
-.cross-fade-height {
-  transition: height .5s ease-in-out;
+.columnStyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.appButtonRowStyle {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.appButtonStyle {
+  margin: 3px;
+}
+
+.appbuttonContainer {
+  margin: 5px;
 }
