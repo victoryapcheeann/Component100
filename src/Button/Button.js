@@ -22,7 +22,7 @@ class Button extends Component {
   constructor() {
     super();
     this.state = {
-      currentButtonComponent : ButtonHoverDraw
+      currentButtonComponent : ButtonDayNightToggle2
     }
   }
 

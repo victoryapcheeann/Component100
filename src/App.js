@@ -55,12 +55,6 @@ class App extends Component {
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Button)}>Button</button>
                 </div>
             </div>
-            <div className='subAppButtonStyle appbuttonContainer columnStyle'>
-              <span className="appLetterStyle">C</span>
-                <div className="subAppButtonStyle  columnStyle">
-                  <button className='appButtonStyle' onClick={() => this.renderComponent(Calender)}>Calender</button>
-                </div>
-            </div>
             <div className='appbuttonContainer columnStyle'>
               <span className="appLetterStyle">D</span>
                 <div className="subAppButtonStyle  columnStyle">
