@@ -5,9 +5,6 @@ import {Planet} from 'react-kawaii';
 
 import Button from './Button/Button';
 import DataDisplay from './DataDisplay/DataDisplay';
-import DataInput from './DataInput/DataInput';
-import Effect3d from'./Effect3d/Effect3d';
-import ErrorPage from './ErrorPage/ErrorPage';
 import Feedback from './Feedback/Feedback';
 import HomePage from './HomePage/HomePage';
 import Icon from './Icon/Icon';
@@ -58,16 +55,8 @@ class App extends Component {
               <span className="appLetterStyle">D</span>
                 <div className="subAppButtonStyle  columnStyle">
                   <button className='appButtonStyle' onClick={() => this.renderComponent(DataDisplay)}>Data Display</button>
-                  <button className='appButtonStyle' onClick={() => this.renderComponent(DataInput)}>Data Input</button>
                 </div>
             </div>
-            <div className='appbuttonContainer columnStyle'>
-              <span className="appLetterStyle">E</span>
-                <div className="subAppButtonStyle columnStyle">
-                  <button className='appButtonStyle' onClick={() => this.renderComponent(Effect3d)}>Effect 3D</button>
-                  <button className='appButtonStyle' onClick={() => this.renderComponent(ErrorPage)}>Error Page</button>
-                </div>
-          </div>
             <div className='appbuttonContainer columnStyle'>
               <span className="appLetterStyle">F</span>
                 <div className="subAppButtonStyle columnStyle">

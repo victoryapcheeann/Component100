@@ -8,13 +8,11 @@ import CalenderPlan from './CalenderPlan/CalenderPlan';
 import EventCard from './EventCard/EventCard';
 import EventTicket from './EventTicket/EventTicket';
 
-import Sample from './Sample/Sample';
-
 class DataDisplay extends Component {
   constructor() {
     super();
     this.state = {
-      currentDataDisplayComponent : Sample
+      currentDataDisplayComponent : EventCard
     }
   }
 
@@ -35,7 +33,6 @@ class DataDisplay extends Component {
             <button className='appButtonStyle' onClick={() => this.renderComponent(CalenderPlan)}>Calender Plan</button>
             <button className='appButtonStyle' onClick={() => this.renderComponent(EventCard)}>Event Card</button>
             <button className='appButtonStyle' onClick={() => this.renderComponent(EventTicket)}>Event Ticket</button>
-            <button className='appButtonStyle' onClick={() => this.renderComponent(Sample)}>Sample</button>
           </div>
           <this.state.currentDataDisplayComponent />
         </div>
