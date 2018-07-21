@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './DataDisplay.css';
-import AppEffect from '../AppEffect'
+import AppEffect from '../AppEffect';
 
-import BorderAnimation from './BorderAnimation/BorderAnimation'
-import CoinCard from './CoinCard/CoinCard'
-import Sample from './Sample/Sample'
+import BorderAnimation from './BorderAnimation/BorderAnimation';
+import CoinCard from './CoinCard/CoinCard';
+import CalenderPlan from './CalenderPlan/CalenderPlan'
+import Sample from './Sample/Sample';
 
 class DataDisplay extends Component {
   constructor() {
@@ -28,6 +29,7 @@ class DataDisplay extends Component {
           <div className="rowStyle subComponentButtonContainer">
             <button className='appButtonStyle' onClick={() => this.renderComponent(BorderAnimation)}>Border Animation</button>
             <button className='appButtonStyle' onClick={() => this.renderComponent(CoinCard)}>Coin Card</button>
+            <button className='appButtonStyle' onClick={() => this.renderComponent(CalenderPlan)}>Calender Plan</button>
             <button className='appButtonStyle' onClick={() => this.renderComponent(Sample)}>Sample</button>
           </div>
           <this.state.currentDataDisplayComponent />

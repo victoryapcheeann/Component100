@@ -8,6 +8,7 @@
     "particles.js": "^2.0.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-icons": "^2.2.7",
     "react-letter-morph": "0.0.5",
     "react-particle-animation": "^1.0.1",
     "react-reveal": "^1.2.2",

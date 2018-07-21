@@ -7,7 +7,7 @@ import WebFont from 'webfontloader';
 
 WebFont.load({
   google: {
-    families: ['Merienda', 'Comfortaa']
+    families: ['Merienda', 'Comfortaa', 'Ramabhadra', 'Ionicons', 'Lato']
   }
 });
 
