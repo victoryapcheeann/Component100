@@ -6,7 +6,7 @@ class Effect3d extends Component {
   render() {
     return (
       <AppEffect>
-        <div> 
+        <div>
           Effect3d
         </div>
       </AppEffect>

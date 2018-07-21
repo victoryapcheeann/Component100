@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  position: relative;
 }
 
 .columnStyle {
@@ -10,13 +11,18 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
 
 .appButtonRowStyle {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
+  height: auto;
+  width: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template: repeat(2, auto) / repeat(2, 125px);
+  grid-auto-flow: column dense;  /* or 'row', 'row dense', 'column dense' */
 }
 
 .appButtonStyle {
@@ -25,4 +31,20 @@
 
 .appbuttonContainer {
   margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.appTitleStyle {
+  margin-left: 30px;
+}
+
+.componentMargin {
+  margin-top: 50px;
+}
+
+.subComponentButtonContainer {
+  display: inline-block;
+  max-width: 60vw;
 }
