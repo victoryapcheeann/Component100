@@ -7,6 +7,10 @@ import ButtonWithGradientShadow from './ButtonWithGradientShadow/ButtonWithGradi
 import ButtonFlip from './ButtonFlip/ButtonFlip';
 import ButtonAtom from './ButtonAtom/ButtonAtom';
 import ButtonDayNightToggle from './ButtonDayNightToggle/ButtonDayNightToggle';
+import ButtonColorfulSwitch from './ButtonColorfulSwitch/ButtonColorfulSwitch';
+import ButtonLinePattern from './ButtonLinePattern/ButtonLinePattern';
+import ButtonPassword from './ButtonPassword/ButtonPassword';
+import Sample from './Sample/Sample';
 
 class Button extends Component {
   constructor() {
@@ -27,11 +31,15 @@ class Button extends Component {
       <AppEffect>
         <div className="columnStyle">
           <div className="rowStyle subComponentButtonContainer">
-            <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonHoverDraw)}>Button Hover Draw</button>
-            <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonWithGradientShadow)}>Button With Gradient Shadow</button>
-            <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonFlip)}>Button Flip</button>
-            <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonAtom)}>Button Atom</button>
-            <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonDayNightToggle)}>Button Day ButtonDayNightToggle</button>
+            <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonHoverDraw)}>Hover Draw</button>
+            <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonWithGradientShadow)}>Gradient Shadow</button>
+            <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonFlip)}>Flip</button>
+            <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonAtom)}>Atom</button>
+            <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonDayNightToggle)}>Day Night Toggle</button>
+            <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonColorfulSwitch)}>Hover Triange</button>
+            <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonLinePattern)}>Line Pattern</button>
+            <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonPassword)}>Password</button>
+            <button className='appButtonStyle' onClick={() => this.renderComponent(Sample)}>Sample</button>
           </div>
           <this.state.currentButtonComponent />
         </div>

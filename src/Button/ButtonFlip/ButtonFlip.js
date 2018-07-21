@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './ButtonFlip.css';
+import AppEffect from '../../AppEffect'
 
 class ButtonFlip extends Component {
   render() {
     return (
-      <div>
+      <AppEffect>
         <div className="circle-container">
         	<div className="outer-ring"></div>
         	<div className="circle">
@@ -16,7 +17,7 @@ class ButtonFlip extends Component {
         		</div>
         	</div>
         </div>
-        </div>
+        </AppEffect>
     );
   }
 }

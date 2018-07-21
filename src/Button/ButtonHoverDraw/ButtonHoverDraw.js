@@ -1,22 +1,23 @@
 import React, { Component } from 'react';
 import './ButtonHoverDraw.css';
+import AppEffect from '../../AppEffect'
 
-class buttonHoverDraw extends Component {
+class ButtonHoverDraw extends Component {
   render() {
     return (
-        <div>
+        <AppEffect>
           <section className="portfolio-experiment">
             <a>
-              <span className="text">Hover me</span>
-              <span className="line -right"></span>
-              <span className="line -top"></span>
-              <span className="line -left"></span>
-              <span className="line -bottom"></span>
+              <span className="buttonHoverText">Hover me</span>
+              <span className="buttonHoverLine -right"></span>
+              <span className="buttonHoverLine -top"></span>
+              <span className="buttonHoverLine -left"></span>
+              <span className="buttonHoverLine -bottom"></span>
             </a>
           </section>
-        </div>
+        </AppEffect>
     );
   }
 }
 
-export default buttonHoverDraw;
+export default ButtonHoverDraw;

@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import './ButtonDayNightToggle.css';
+import AppEffect from '../../AppEffect'
 
 class ButtonDayNightToggle extends Component {
   render() {
     return (
+      <AppEffect>
         <div className="buttonDayNightToggleContainer">
           <input className="buttonDayNightInputStyle" type="checkbox" id="c" />
             <label className="buttonDayNightLabelStyle" for="c">
@@ -23,6 +25,7 @@ class ButtonDayNightToggle extends Component {
             	<div className="buttonDay">Good Morning</div>
           </section>
         </div>
+      </AppEffect>
     );
   }
 }
