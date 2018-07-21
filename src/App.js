@@ -57,15 +57,15 @@ class App extends Component {
             <div className='appbuttonContainer columnStyle'>
               <span className="appLetterStyle">D</span>
                 <div className="subAppButtonStyle  columnStyle">
-                  <button className='appButtonStyle' onClick={() => this.renderComponent(DataDisplay)}>DataDisplay</button>
-                  <button className='appButtonStyle' onClick={() => this.renderComponent(DataInput)}>DataInput</button>
+                  <button className='appButtonStyle' onClick={() => this.renderComponent(DataDisplay)}>Data Display</button>
+                  <button className='appButtonStyle' onClick={() => this.renderComponent(DataInput)}>Data Input</button>
                 </div>
             </div>
             <div className='appbuttonContainer columnStyle'>
               <span className="appLetterStyle">E</span>
                 <div className="subAppButtonStyle columnStyle">
-                  <button className='appButtonStyle' onClick={() => this.renderComponent(Effect3d)}>Effect3d</button>
-                  <button className='appButtonStyle' onClick={() => this.renderComponent(ErrorPage)}>ErrorPage</button>
+                  <button className='appButtonStyle' onClick={() => this.renderComponent(Effect3d)}>Effect 3D</button>
+                  <button className='appButtonStyle' onClick={() => this.renderComponent(ErrorPage)}>Error Page</button>
                 </div>
           </div>
             <div className='appbuttonContainer columnStyle'>
@@ -77,7 +77,7 @@ class App extends Component {
             <div className='appbuttonContainer columnStyle'>
               <span className="appLetterStyle">H</span>
                 <div className="subAppButtonStyle columnStyle">
-                  <button className='appButtonStyle' onClick={() => this.renderComponent(HomePage)}>HomePage</button>
+                  <button className='appButtonStyle' onClick={() => this.renderComponent(HomePage)}>Home Page</button>
                 </div>
             </div>
             <div className='appbuttonContainer columnStyle'>
@@ -111,13 +111,13 @@ class App extends Component {
             <div className='appbuttonContainer columnStyle'>
               <span className="appLetterStyle">Q</span>
                 <div className="subAppButtonStyle columnStyle">
-                  <button className='appButtonStyle' onClick={() => this.renderComponent(QuestionAnswers)}>QuestionAnswers</button>
+                  <button className='appButtonStyle' onClick={() => this.renderComponent(QuestionAnswers)}>Question & Answers</button>
                 </div>
             </div>
             <div className='appbuttonContainer columnStyle'>
               <span className="appLetterStyle">R</span>
                 <div className="subAppButtonStyle columnStyle">
-                  <button className='appButtonStyle' onClick={() => this.renderComponent(RandomStuff)}>RandomStuff</button>
+                  <button className='appButtonStyle' onClick={() => this.renderComponent(RandomStuff)}>Random Stuff</button>
                 </div>
             </div>
             <div className='appbuttonContainer columnStyle'>
@@ -129,9 +129,9 @@ class App extends Component {
             <div className='appbuttonContainer columnStyle'>
               <span className="appLetterStyle">T</span>
                 <div className="subAppButtonStyle columnStyle">
-                  <button className='appButtonStyle' onClick={() => this.renderComponent(TextEffect)}>TextEffect</button>
+                  <button className='appButtonStyle' onClick={() => this.renderComponent(TextEffect)}>Text Effect</button>
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Timeline)}>Timeline</button>
-                  <button className='appButtonStyle' onClick={() => this.renderComponent(TransitionEffect)}>TransitionEffect</button>
+                  <button className='appButtonStyle' onClick={() => this.renderComponent(TransitionEffect)}>Transition Effect</button>
                 </div>
             </div>
             <div className='appbuttonContainer columnStyle'>

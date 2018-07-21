@@ -44,7 +44,7 @@ class Button extends Component {
             <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonAtom)}>Atom</button>
             <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonDayNightToggle)}>Day Night</button>
             <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonDayNightToggle2)}>Day Night 2</button>
-            <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonColorfulSwitch)}>Hover Triange</button>
+            <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonColorfulSwitch)}>Colorful Switch</button>
             <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonLinePattern)}>Line Pattern</button>
             <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonLinePattern2)}>Line Pattern 2</button>
             <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonPassword)}>Password</button>
