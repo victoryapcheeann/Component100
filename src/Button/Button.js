@@ -18,8 +18,6 @@ import ButtonHappy from './ButtonHappy/ButtonHappy';
 import ButtonNext from './ButtonNext/ButtonNext';
 import ButtonCircle from './ButtonCircle/ButtonCircle';
 
-import Sample from './Sample/Sample';
-
 class Button extends Component {
   constructor() {
     super();
