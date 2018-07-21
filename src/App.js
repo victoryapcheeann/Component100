@@ -4,7 +4,6 @@ import './App.css';
 import {Planet} from 'react-kawaii';
 
 import Button from './Button/Button';
-import Calender from './Calender/Calender';
 import DataDisplay from './DataDisplay/DataDisplay';
 import DataInput from './DataInput/DataInput';
 import Effect3d from'./Effect3d/Effect3d';
