@@ -7,16 +7,16 @@ class ButtonPassword extends Component {
     return (
         <AppEffect>
           <div className="buttonPasswordContainer">
-          <div class="password">
-            <input type="checkbox" class="password--visibleToggle"/>
-            <div class="password--background"></div>
-            <div class="password--visibleToggle-eye open">
+          <div className="password">
+            <input type="checkbox" className="password--visibleToggle"/>
+            <div className="password--background"></div>
+            <div className="password--visibleToggle-eye open">
               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/138980/eye-open.png" />
             </div>
-            <div class="password--visibleToggle-eye close">
+            <div className="password--visibleToggle-eye close">
               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/138980/eye-close.png" />
             </div>
-            <svg version="1.1" id="Capa_1" class="password--lock">
+            <svg version="1.1" id="Capa_1" className="password--lock">
             <g>
           	<path d="M25.534,14.457h-1.529V9.361c0-2.541-0.965-4.871-2.555-6.572C19.864,1.09,17.602-0.006,15.11,0
           		c-2.494-0.006-4.756,1.09-6.34,2.789C7.179,4.49,6.214,6.82,6.214,9.361v5.096H4.683c-0.629,0-1.145,0.512-1.145,1.145v13.471
@@ -25,7 +25,7 @@ class ButtonPassword extends Component {
           		c0.865,0.92,1.42,2.221,1.42,3.686v5.096h-9.344V9.361z"/>
               </g>
             </svg>
-            <input type="text" class="password--input" value="I love you💖"/>
+            <input type="text" className="password--input" value="I love you💖"/>
           </div>
           </div>
         </AppEffect>

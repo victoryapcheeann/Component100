@@ -1,3 +1,8 @@
+.linePattern2Panel{
+  background-color: lightgreen;
+  padding: 20px;
+}
+
 .linePattern2Pink button {
 	color: #eb1777;
 	border-color: #eb1777

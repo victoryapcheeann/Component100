@@ -6,15 +6,15 @@ class buttonColorfulSwitch extends Component {
   render() {
     return (
         <AppEffect>
-          <div class="colorful-switch">
-            <input type="checkbox" class="colorful-switch__checkbox" id="colorful-switch-cb" />
-            <label class="colorful-switch__label" for="colorful-switch-cb">
-              <span class="colorful-switch__bg"></span>
-              <span class="colorful-switch__dot"></span>
-              <span class="colorful-switch__on">
-                <span class="colorful-switch__on__inner"></span>
+          <div className="colorful-switch">
+            <input type="checkbox" className="colorful-switch__checkbox" id="colorful-switch-cb" />
+            <label className="colorful-switch__label" for="colorful-switch-cb">
+              <span className="colorful-switch__bg"></span>
+              <span className="colorful-switch__dot"></span>
+              <span className="colorful-switch__on">
+                <span className="colorful-switch__on__inner"></span>
               </span>
-              <span class="colorful-switch__off"></span>
+              <span className="colorful-switch__off"></span>
             </label>
           </div>
         </AppEffect>

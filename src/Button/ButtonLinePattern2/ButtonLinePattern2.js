@@ -6,7 +6,7 @@ class ButtonLinePattern2 extends Component {
   render() {
     return (
         <AppEffect>
-          <div classNameName="sampleContainer">
+          <div classNameName="lineSample2Container">
             <div className="linePattern2Panel">
             <button>Home</button>
             <button>Menu</button>
