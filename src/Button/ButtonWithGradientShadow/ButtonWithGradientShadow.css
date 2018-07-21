@@ -37,8 +37,8 @@ a:hover, a:focus, a:active {
 /* fancy Button */
 .fancy-button {
   display: inline-block;
-  margin: 30px;
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  margin: 10px;
+  font-family: 'Montserrat', sans-serif;
   font-size: 17px;
   letter-spacing: 0.03em;
   text-transform: uppercase;

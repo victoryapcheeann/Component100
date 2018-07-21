@@ -6,9 +6,7 @@ class Sample extends Component {
   render() {
     return (
         <AppEffect>
-          <div>
            Sample
-          </div>
         </AppEffect>
     );
   }

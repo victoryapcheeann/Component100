@@ -3,7 +3,6 @@
   -webkit-perspective: 1000;
           perspective: 1000;
   margin: 0 auto;
-  margin-top: 50px;
 }
 
 .circle-container:hover .circle {

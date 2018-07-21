@@ -7,10 +7,6 @@
 	--tr-X: calc(var(--btn-w) - var(--dot-w));
 }
 
-.atomButtonContainer {
-  margin-top: 50px;
-}
-
 .atomBtn {
 	position: relative;
 	margin: 0 auto;

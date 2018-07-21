@@ -44,7 +44,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="columnStyle">
+      <div className='mainContainer columnStyle'>
         <div className='appTitleStyle rowStyle'>
           <Planet size={80} mood="happy" color="#FCCB7E" text="I'm a planet!" showTextOnHover={true} />
           <h1 className='appTitleStyle'>Component100</h1>
@@ -52,66 +52,66 @@ class App extends Component {
         <div className='appButtonRowStyle'>
             <div className='appbuttonContainer columnStyle'>
               <span>B</span>
-                <div className="columnStyle">
+                <div className="subAppButtonStyle columnStyle">
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Button)}>Button</button>
                 </div>
             </div>
-            <div className='appbuttonContainer columnStyle'>
+            <div className='subAppButtonStyle appbuttonContainer columnStyle'>
               <span>C</span>
-                <div className="columnStyle">
+                <div className="subAppButtonStyle  columnStyle">
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Calender)}>Calender</button>
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Colours)}>Colours</button>
                 </div>
             </div>
             <div className='appbuttonContainer columnStyle'>
               <span>D</span>
-                <div className="columnStyle">
+                <div className="subAppButtonStyle  columnStyle">
                   <button className='appButtonStyle' onClick={() => this.renderComponent(DataDisplay)}>DataDisplay</button>
                   <button className='appButtonStyle' onClick={() => this.renderComponent(DataInput)}>DataInput</button>
                 </div>
             </div>
             <div className='appbuttonContainer columnStyle'>
               <span>E</span>
-                <div className="columnStyle">
+                <div className="subAppButtonStyle columnStyle">
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Effect3d)}>Effect3d</button>
                   <button className='appButtonStyle' onClick={() => this.renderComponent(ErrorPage)}>ErrorPage</button>
                 </div>
           </div>
             <div className='appbuttonContainer columnStyle'>
               <span>F</span>
-                <div className="columnStyle">
+                <div className="subAppButtonStyle columnStyle">
                  <button className='appButtonStyle' onClick={() => this.renderComponent(Feedback)}>Feedback</button>
                 </div>
             </div>
             <div className='appbuttonContainer columnStyle'>
               <span>H</span>
-                <div className="columnStyle">
+                <div className="subAppButtonStyle columnStyle">
                   <button className='appButtonStyle' onClick={() => this.renderComponent(HomePage)}>HomePage</button>
                 </div>
             </div>
             <div className='appbuttonContainer columnStyle'>
               <span>I</span>
-                <div className="columnStyle">
+                <div className="subAppButtonStyle columnStyle">
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Icon)}>Icon</button>
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Image)}>Image</button>
                 </div>
             </div>
             <div className='appbuttonContainer columnStyle'>
               <span>L</span>
-                <div className="columnStyle">
+                <div className="subAppButtonStyle columnStyle">
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Loader)}>Loader</button>
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Lottie)}>Lottie</button>
                 </div>
             </div>
             <div className='appbuttonContainer columnStyle'>
               <span>M</span>
-                <div className="columnStyle">
+                <div className="subAppButtonStyle columnStyle">
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Menu)}>Menu</button>
                 </div>
             </div>
             <div className='appbuttonContainer columnStyle'>
               <span>P</span>
-                <div className="columnStyle">
+                <div className="subAppButtonStyle columnStyle">
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Payment)}>Payment</button>
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Presentation)}>Presentation</button>
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Profile)}>Profile</button>
@@ -119,25 +119,25 @@ class App extends Component {
             </div>
             <div className='appbuttonContainer columnStyle'>
               <span>Q</span>
-                <div className="columnStyle">
+                <div className="subAppButtonStyle columnStyle">
                   <button className='appButtonStyle' onClick={() => this.renderComponent(QuestionAnswers)}>QuestionAnswers</button>
                 </div>
             </div>
             <div className='appbuttonContainer columnStyle'>
               <span>R</span>
-                <div className="columnStyle">
+                <div className="subAppButtonStyle columnStyle">
                   <button className='appButtonStyle' onClick={() => this.renderComponent(RandomStuff)}>RandomStuff</button>
                 </div>
             </div>
             <div className='appbuttonContainer columnStyle'>
               <span>S</span>
-                <div className="columnStyle">
+                <div className="subAppButtonStyle columnStyle">
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Slider)}>Slider</button>
                 </div>
             </div>
             <div className='appbuttonContainer columnStyle'>
               <span>T</span>
-                <div className="columnStyle">
+                <div className="subAppButtonStyle columnStyle">
                   <button className='appButtonStyle' onClick={() => this.renderComponent(TextEffect)}>TextEffect</button>
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Timeline)}>Timeline</button>
                   <button className='appButtonStyle' onClick={() => this.renderComponent(TransitionEffect)}>TransitionEffect</button>
@@ -145,7 +145,7 @@ class App extends Component {
             </div>
             <div className='appbuttonContainer columnStyle'>
               <span>W</span>
-                <div className="columnStyle">
+                <div className="subAppButtonStyle columnStyle">
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Weather)}>Weather</button>
                 </div>
             </div>

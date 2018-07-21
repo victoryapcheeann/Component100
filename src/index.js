@@ -7,7 +7,7 @@ import WebFont from 'webfontloader';
 
 WebFont.load({
   google: {
-    families: ['Merienda', 'sans-serif']
+    families: ['Merienda', 'Comfortaa']
   }
 });
 

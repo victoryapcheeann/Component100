@@ -10,6 +10,10 @@ import ButtonDayNightToggle from './ButtonDayNightToggle/ButtonDayNightToggle';
 import ButtonColorfulSwitch from './ButtonColorfulSwitch/ButtonColorfulSwitch';
 import ButtonLinePattern from './ButtonLinePattern/ButtonLinePattern';
 import ButtonPassword from './ButtonPassword/ButtonPassword';
+import ButtonOnOff from './ButtonOnOff/ButtonOnOff';
+import ButtonLinePattern2 from './ButtonLinePattern2/ButtonLinePattern2';
+import ButtonPaper from './ButtonPaper/ButtonPaper';
+
 import Sample from './Sample/Sample';
 
 class Button extends Component {
@@ -38,7 +42,10 @@ class Button extends Component {
             <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonDayNightToggle)}>Day Night Toggle</button>
             <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonColorfulSwitch)}>Hover Triange</button>
             <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonLinePattern)}>Line Pattern</button>
+            <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonLinePattern2)}>Line Pattern 2</button>
             <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonPassword)}>Password</button>
+            <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonOnOff)}>On Off</button>
+            <button className='appButtonStyle' onClick={() => this.renderComponent(ButtonPaper)}>Paper</button>
             <button className='appButtonStyle' onClick={() => this.renderComponent(Sample)}>Sample</button>
           </div>
           <this.state.currentButtonComponent />

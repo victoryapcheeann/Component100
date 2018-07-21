@@ -1,3 +1,17 @@
+body {
+  font-family: 'Merienda';
+}
+
+.mainContainer {
+background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-bottom: 300px;
+}
+
 .rowStyle {
   display: flex;
   align-items: center;
@@ -26,7 +40,7 @@
 }
 
 .appButtonStyle {
-  margin: 3px;
+  margin: 5px;
 }
 
 .appbuttonContainer {
@@ -47,4 +61,65 @@
 .subComponentButtonContainer {
   display: inline-block;
   max-width: 50vw;
+  margin-bottom: 50px;
+background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);  padding: 20px;
+}
+
+.subAppButtonStyle {
+  margin-left: 5px;
+}
+
+button {
+	color: #454545;
+	background: transparent;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #454545;
+	position: relative;
+	margin: 1em;
+	display: inline-block;
+	padding: 0.5em 1em;
+	transition: all 0.3s ease-in-out;
+	text-align: center;
+	font-family: comfortaa;
+	font-weight: bold
+}
+
+button:before,
+button:after {
+	content: '';
+	display: block;
+	position: absolute;
+	border-color: #454545;
+	box-sizing: border-box;
+	border-style: solid;
+	width: 1em;
+	height: 1em;
+	transition: all 0.3s ease-in-out
+}
+
+button:before {
+	top: -6px;
+	left: -6px;
+	border-width: 2px 0 0 2px;
+	z-index: 5;
+}
+
+button:after {
+	bottom: -6px;
+	right: -6px;
+	border-width: 0 2px 2px 0;
+}
+
+button:hover:before,
+button:hover:after {
+	width: calc(100% + 12px);
+	height: calc(100% + 12px);
+	border-color: #fff
+}
+
+button:hover {
+	color: #353535;
+	background-color: #fff;
+	border-color: #fff
 }

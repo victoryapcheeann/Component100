@@ -1,0 +1,114 @@
+.linePattern2Pink button {
+	color: #eb1777;
+	border-color: #eb1777
+}
+
+.linePattern2Pink button:before,
+.linePattern2Pink button:after {
+	border-color: #eb1777
+}
+
+.linePattern2Pink button:hover:before,
+.linePattern2Pink button:hover:after {
+	border-color: #eb1777;
+}
+
+.linePattern2Pink button:hover {
+	color: #fff;
+	background-color: #eb1777;
+	border-color: #eb1777;
+}
+
+.linePattern2Pink .linePattern2Panel {
+	max-width: 960px;
+	text-align: center;
+	position: relative;
+	margin: auto;
+}
+
+.linePattern2Blue button {
+	color: #3bb4e5;
+	border-color: #3bb4e5
+}
+
+.linePattern2Blue button:before,
+.linePattern2Blue button:after {
+	border-color: #3bb4e5
+}
+
+.linePattern2Blue button:hover:before,
+.linePattern2Blue button:hover:after {
+	width: calc(100% + 12px);
+	height: calc(100% + 12px);
+	border-color: #3bb4e5;
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg)
+}
+
+.linePattern2Blue button:hover {
+	color: #3bb4e5;
+	background-color: transparent;
+	border-color: #3bb4e5
+}
+
+.linePattern2Blue .linePattern2Panel {
+	max-width: 960px;
+	text-align: center;
+	position: relative;
+	margin: auto;
+}
+
+.linePattern2Borderless button {
+	border-color: rgba(0, 0, 0, 0);
+	color: #999
+}
+
+.linePattern2Borderless button:hover {
+	border-color: #353535;
+	background-color: transparent;
+	color: #353535
+}
+
+.linePattern2Borderless button:before,
+.linePattern2Borderless button:after {
+	border-color: transparent;
+}
+
+.linePattern2Borderless button:hover:before,
+.linePattern2Borderless button:hover:after {
+	width: calc(100% + 12px);
+	height: calc(100% + 12px);
+	border-color: #353535
+}
+
+.linePattern2bw button {
+	color: #fff;
+	border-color: #fff;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1) inset
+}
+
+.linePattern2bw button:before,
+.linePattern2bw button:after {
+	border-color: #fff
+}
+
+.linePattern2bw button:hover:before,
+.linePattern2bw button:hover:after {
+	width: calc(100% + 12px);
+	height: calc(100% + 12px);
+	border-color: #353535;
+}
+
+.linePattern2bw button:hover {
+	color: #fff;
+	background-color: #353535;
+	border-color: #353535
+}
+
+.linePattern2Blue .linePattern2Panel {
+	max-width: 960px;
+	text-align: center;
+	position: relative;
+	margin: auto;
+}
