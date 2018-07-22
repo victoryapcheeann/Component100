@@ -30,7 +30,6 @@ class Image extends Component {
             <button className='appButtonStyle' onClick={() => this.renderComponent(ImageHoverEffect1)}>Image Hover Effect 1</button>
             <button className='appButtonStyle' onClick={() => this.renderComponent(ImageHoverEffect2)}>Image Hover Effect 2</button>
             <button className='appButtonStyle' onClick={() => this.renderComponent(OnClickImageGallery)}>Image Gallery On Click</button>
-            <button className='appButtonStyle' onClick={() => this.renderComponent(Sample)}>Sample</button>
           </div>
           <this.state.currentImageComponent />
         </div>

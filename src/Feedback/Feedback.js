@@ -26,7 +26,6 @@ class Feedback extends Component {
           <span>Feedback</span>
           <div className="rowStyle subComponentButtonContainer">
             <button className='appButtonStyle' onClick={() => this.renderComponent(Feedback1)}>Feedback Style 1</button>
-            <button className='appButtonStyle' onClick={() => this.renderComponent(Sample)}>Sample</button>
           </div>
           <this.state.currentFeedbackComponent />
         </div>

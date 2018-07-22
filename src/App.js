@@ -10,16 +10,11 @@ import HomePage from './HomePage/HomePage';
 import Icon from './Icon/Icon';
 import Image from './Image/Image';
 import Loader from './Loader/Loader';
-import Lottie from './Lottie/Lottie';
 import Menu from './Menu/Menu';
-import Payment from './Payment/Payment';
-import Presentation from './Presentation/Presentation';
 import Profile from './Profile/Profile';
-import QuestionAnswers from './QuestionAnswers/QuestionAnswers';
 import RandomStuff from './RandomStuff/RandomStuff';
 import Slider from './Slider/Slider';
 import TextEffect from './TextEffect/TextEffect';
-import Timeline from './Timeline/Timeline';
 import TransitionEffect from './TransitionEffect/TransitionEffect';
 import Weather from './Weather/Weather';
 
@@ -53,16 +48,11 @@ class App extends Component {
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Icon)}>Icon</button>
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Image)}>Image</button>
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Loader)}>Loader</button>
-                  <button className='appButtonStyle' onClick={() => this.renderComponent(Lottie)}>Lottie</button>
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Menu)}>Menu</button>
-                  <button className='appButtonStyle' onClick={() => this.renderComponent(Payment)}>Payment</button>
-                  <button className='appButtonStyle' onClick={() => this.renderComponent(Presentation)}>Presentation</button>
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Profile)}>Profile</button>
-                  <button className='appButtonStyle' onClick={() => this.renderComponent(QuestionAnswers)}>Question & Answers</button>
                   <button className='appButtonStyle' onClick={() => this.renderComponent(RandomStuff)}>Random Stuff</button>
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Slider)}>Slider</button>
                   <button className='appButtonStyle' onClick={() => this.renderComponent(TextEffect)}>Text Effect</button>
-                  <button className='appButtonStyle' onClick={() => this.renderComponent(Timeline)}>Timeline</button>
                   <button className='appButtonStyle' onClick={() => this.renderComponent(TransitionEffect)}>Transition Effect</button>
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Weather)}>Weather</button>
         </div>

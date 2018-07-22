@@ -26,7 +26,6 @@ class Icon extends Component {
           <span>Icon</span>
           <div className="rowStyle subComponentButtonContainer">
             <button className='appButtonStyle' onClick={() => this.renderComponent(BirdIcon)}>Bird</button>
-            <button className='appButtonStyle' onClick={() => this.renderComponent(Sample)}>Sample</button>
           </div>
           <this.state.currentIconComponent />
         </div>

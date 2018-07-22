@@ -26,7 +26,6 @@ class HomePage extends Component {
           <span>HomePage</span>
           <div className="rowStyle subComponentButtonContainer">
             <button className='appButtonStyle' onClick={() => this.renderComponent(Colourful2018)}>Colorful 2018</button>
-            <button className='appButtonStyle' onClick={() => this.renderComponent(Sample)}>Sample</button>
           </div>
           <this.state.currentHomePageComponent />
         </div>

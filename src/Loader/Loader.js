@@ -2,13 +2,16 @@ import React, { Component } from 'react';
 import './Loader.css';
 import AppEffect from '../AppEffect'
 
-import Sample from './Sample/Sample'
+import SquareLoader from './SquareLoader/SquareLoader';
+import GlowingLoader from './GlowingLoader/GlowingLoader';
+import StaircaseLoader from './StaircaseLoader/StaircaseLoader';
+import Sample from './Sample/Sample';
 
 class Loader extends Component {
   constructor() {
     super();
     this.state = {
-      currentLoaderComponent : Sample
+      currentLoaderComponent : SquareLoader
     }
   }
 
@@ -24,7 +27,9 @@ class Loader extends Component {
         <div className="columnStyle">
           <span>Loader</span>
           <div className="rowStyle subComponentButtonContainer">
-            <button className='appButtonStyle' onClick={() => this.renderComponent(Sample)}>Sample</button>
+            <button className='appButtonStyle' onClick={() => this.renderComponent(SquareLoader)}>Square Loader</button>
+            <button className='appButtonStyle' onClick={() => this.renderComponent(GlowingLoader)}>Glowing Loader</button>
+            <button className='appButtonStyle' onClick={() => this.renderComponent(StaircaseLoader)}>Staircase Loader</button>
           </div>
           <this.state.currentLoaderComponent />
         </div>
