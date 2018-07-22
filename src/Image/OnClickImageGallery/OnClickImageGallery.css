@@ -1,0 +1,328 @@
+#filterSVG {
+  display: none;
+}
+
+.case-container {
+  max-width: 1220px;
+  position: relative;
+  background: #fff;
+  height: 400px;
+  height: 80vh;
+  max-height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-left: 200px;  
+}
+.case-container input {
+  display: none;
+}
+
+.case {
+  position: relative;
+  height: 100%;
+  float: left;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  -webkit-backface-visibility: hidden;
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+  overflow: hidden;
+  border-right: 3px solid white;
+  border-left: 3px solid white;
+}
+@media (min-width: 700px) {
+  .case {
+    -webkit-transform: skew(-15deg) translateZ(0);
+    transform: skew(-15deg) translateZ(0);
+  }
+}
+.case:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -80%;
+  bottom: 0;
+  left: -80%;
+  transition: all 0.2s ease-in;
+}
+@media (min-width: 700px) {
+  .case:after {
+    -webkit-transform: skew(15deg);
+    transform: skew(15deg);
+  }
+}
+.case header {
+  z-index: 2;
+  position: relative;
+  font: 300 2.8rem/2 "Open Sans Condensed", "Open Sans", Arial;
+  color: white;
+  text-shadow: 0px 0px 8px #000;
+  padding: 0.5em 1em;
+}
+@media (min-width: 700px) {
+  .case header {
+    -webkit-transform: skew(15deg);
+    transform: skew(15deg);
+  }
+}
+.case button {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: block;
+  padding: 0.5em 2em;
+  font: 300 1.5rem "Open Sans Condensed", "Open Sans", Arial;
+  color: #fff;
+  border-radius: 0.3rem;
+  border: 3px solid white;
+  margin: 1em auto;
+  cursor: pointer;
+}
+@media (min-width: 700px) {
+  .case button {
+    -webkit-transform: skew(15deg);
+    transform: skew(15deg);
+  }
+}
+.case button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.case.case-1 {
+  display: block;
+  width: 6.6666666667%;
+}
+.case.case-1:after {
+  background: url("https://unsplash.com/photos/_iVG4MsY2N0/download") no-repeat center center;
+  background-size: cover;
+}
+.case.case-2 {
+  display: block;
+  width: 6.6666666667%;
+}
+.case.case-2:after {
+  background: url("https://unsplash.com/photos/xVHr4B1WApk/download") no-repeat center center;
+  background-size: cover;
+}
+.case.case-3 {
+  display: block;
+  width: 6.6666666667%;
+}
+.case.case-3:after {
+  background: url("https://unsplash.com/photos/eWBseWsTEpA/download") no-repeat center center;
+  background-size: cover;
+}
+.case.case-4 {
+  display: block;
+  width: 6.6666666667%;
+}
+.case.case-4:after {
+  background: url("https://unsplash.com/photos/26-lAP0XprM/download") no-repeat center center;
+  background-size: cover;
+}
+.case.case-5 {
+  display: block;
+  width: 6.6666666667%;
+}
+.case.case-5:after {
+  background: url("https://ununsplash.imgix.net/photo-1417870839255-a23faa90c6b0?fit=crop&fm=jpg&h=700&q=75&w=1050") no-repeat center center;
+  background-size: cover;
+}
+.case.case-6 {
+  display: block;
+  width: 6.6666666667%;
+}
+.case.case-6:after {
+  background: url("https://unsplash.imgix.net/photo-1414924347000-9823c338079b?fit=crop&fm=jpg&h=700&q=75&w=1050") no-repeat center center;
+  background-size: cover;
+}
+
+/* descendant of .case */
+.project {
+  z-index: 2;
+  position: relative;
+  color: white;
+  padding-left: 1em;
+  background: rgba(0, 0, 0, 0.3);
+  /*ensure that children are skewed back as .case will skew the whole content*/
+}
+.project:after {
+  content: " ";
+  clear: both;
+  display: block;
+}
+.project .group {
+  width: 50%;
+  float: left;
+  padding-left: 1em;
+}
+.project .group h3 {
+  font: 300 1.8rem/1 "Open Sans Condensed", "Open Sans", Arial;
+  text-shadow: 0 0 30px #000;
+  margin: 1em 0 0;
+}
+.project .group p {
+  font: 400 1rem/1.5 "Open Sans", Arial;
+}
+@media (min-width: 700px) {
+  .case .project > * {
+    -webkit-transform: skew(15deg);
+    transform: skew(15deg);
+  }
+}
+
+/* "Interactivity" based upon radio selection. */
+/* Unselected case-styling */
+.case-container input:not(:checked) + .case {
+  cursor: pointer;
+  z-index: 20;
+  /* This pseudo element is the background. Make blurry and reduce color for modern browsers */
+  /*
+    This tries to change the element boundaries, by using a rotated psuedo-element that covers the skewed area
+    at least IE11 does not change element boundaries on transform: skew, but does so on rotate!
+   */
+  /* By default all descendants of .case are hidden, these will be made visible when a case is selected. */
+}
+.case-container input:not(:checked) + .case:hover {
+  cursor: pointer;
+  z-index: 2;
+  /* This pseudo element is the background. Unblur and bring out colors on hover for modern browsers */
+}
+.case-container input:not(:checked) + .case:hover:after {
+  filter: url(#nobkgeffect);
+  -webkit-filter: blur(0px) grayscale(0%);
+  filter: blur(0px) grayscale(0%);
+}
+.case-container input:not(:checked) + .case:after {
+  filter: url(#bkgeffect);
+  -webkit-filter: blur(2px) grayscale(70%);
+  filter: blur(2px) grayscale(70%);
+}
+.case-container input:not(:checked) + .case:before {
+  background: rgba(0, 0, 0, 0);
+  content: " ";
+  display: block;
+  position: absolute;
+  top: -20%;
+  right: 0;
+  left: 0;
+  bottom: -20%;
+  z-index: 40;
+  cursor: pointer;
+}
+@media (min-width: 700px) {
+  .case-container input:not(:checked) + .case:before {
+    -webkit-transform: skew(15deg) rotateZ(15deg);
+    transform: skew(15deg) rotateZ(15deg);
+  }
+}
+.case-container input:not(:checked) + .case > * {
+  opacity: 0;
+  transition: opacity 0.1s ease-in;
+}
+
+/* Selected case! */
+.case-container input:checked + .case {
+  width: 50%;
+  z-index: 0;
+}
+.case-container input:checked + .case:after {
+  left: -10%;
+  right: -10%;
+}
+.case-container input:checked + .case > * {
+  opacity: 1;
+  transition: opacity 0.3s 0.3s ease-in, background 0.2s ease-out;
+}
+
+@media (max-width: 1100px) {
+  .case-container {
+    max-height: 250px;
+  }
+  .case-container header {
+    font-size: 2rem;
+    padding: 0.3em;
+  }
+  .case-container .project h3 {
+    font-size: 1.5rem;
+  }
+  .case-container .project p {
+    font-size: 0.9rem;
+  }
+  .case-container button {
+    position: absolute;
+    top: -0.3rem;
+    right: 1rem;
+    border-width: 2px;
+    padding: 0.2em 1em;
+  }
+}
+@media (max-width: 699px) {
+  .case-container {
+    max-height: none;
+  }
+
+  .case {
+    max-height: none;
+    height: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0.2em;
+  }
+  h1:after {
+    content: "You are viewing this on a narrow device. This is a large-screen concept without a mobile-first approach, I threw in some styling ideas for mobile/tablet just to ensure that the concept could work on those devices as well.";
+    display: block;
+    font: 400 1.2rem "Open Sans", Arial;
+  }
+}
+@media (max-width: 480px) {
+  .case {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+  .case:after {
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+  .case button {
+    position: relative;
+    top: auto;
+    right: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .case-container {
+    height: auto;
+  }
+  .case-container input:checked + .case {
+    width: 100%;
+    height: 80vh;
+    float: none;
+  }
+  .case-container input:not(:checked) + .case {
+    width: 100%;
+    height: 4rem;
+    float: none;
+  }
+  .case-container input:not(:checked) + .case:before {
+    display: none;
+  }
+  .case-container input:not(:checked) + .case:after {
+    -webkit-filter: none;
+    filter: none;
+  }
+  .case-container input:not(:checked) + .case header {
+    opacity: 1;
+    margin-top: -0.5em;
+  }
+
+  label:nth-child(even) input:not(:checked) + .case header {
+    text-align: right;
+    width: 100%;
+  }
+}

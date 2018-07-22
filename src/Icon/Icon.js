@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import './Icon.css';
-import AppEffect from '../AppEffect'
+import AppEffect from '../AppEffect';
 
-import Sample from './Sample/Sample'
+import BirdIcon from './BirdIcon/BirdIcon';
+import Sample from './Sample/Sample';
 
 class Icon extends Component {
   constructor() {
     super();
     this.state = {
-      currentIconComponent : Sample
+      currentIconComponent : BirdIcon
     }
   }
 
@@ -24,6 +25,7 @@ class Icon extends Component {
         <div className="columnStyle">
           <span>Icon</span>
           <div className="rowStyle subComponentButtonContainer">
+            <button className='appButtonStyle' onClick={() => this.renderComponent(BirdIcon)}>Bird</button>
             <button className='appButtonStyle' onClick={() => this.renderComponent(Sample)}>Sample</button>
           </div>
           <this.state.currentIconComponent />

@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import './HomePage.css';
-import AppEffect from '../AppEffect'
+import AppEffect from '../AppEffect';
 
-import Sample from './Sample/Sample'
+import Colourful2018 from './Colourful2018/Colourful2018';
+import Sample from './Sample/Sample';
 
 class HomePage extends Component {
   constructor() {
     super();
     this.state = {
-      currentHomePageComponent : Sample
+      currentHomePageComponent : Colourful2018
     }
   }
 
@@ -24,6 +25,7 @@ class HomePage extends Component {
         <div className="columnStyle">
           <span>HomePage</span>
           <div className="rowStyle subComponentButtonContainer">
+            <button className='appButtonStyle' onClick={() => this.renderComponent(Colourful2018)}>Colorful 2018</button>
             <button className='appButtonStyle' onClick={() => this.renderComponent(Sample)}>Sample</button>
           </div>
           <this.state.currentHomePageComponent />
