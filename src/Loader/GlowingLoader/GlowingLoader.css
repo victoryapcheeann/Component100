@@ -9,17 +9,18 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  -webkit-animation: glow 15s linear 0s infinite forwards;
+  -webkit-animation: glowingLight 15s linear 0s infinite forwards;
   background: url('https://t0.rbxcdn.com/182160a5d7d68c6d4be14a6d9f9e5598');
   background-size: contain;
 }
 
-.glowingLoaderParticles {
+.particles {
   position: absolute;
   top: calc(50%);
   left: calc(50% - 50px);
   width: 100px;
   height: 100px;
+
 }
 
 .rotate {
@@ -75,7 +76,7 @@
 }
 
 
-@-webkit-keyframes glow {
+@-webkit-keyframes glowingLight {
   0% {
     transform: scale(1) rotate(0deg);
     filter: brightness(150%) saturate(50%) hue-rotate(0deg) opacity(100%);
@@ -174,7 +175,7 @@
   -webkit-animation: size 10s steps(5) 0s infinite;
 }
 .rotate .angle:nth-child(1) .particle{
-  /* animate the glow and change the color every 2 seconds */
+  /* animate the glowingLight and change the color every 2 seconds */
   -webkit-animation: particle 6s linear infinite alternate;
 }
 .rotate .angle:nth-child(1) .position{
@@ -193,7 +194,7 @@
   -webkit-animation: size 4.95s steps(3) -1.65s infinite alternate;
 }
 .rotate .angle:nth-child(2) .particle{
-  /* animate the glow and change the color every 2 seconds */
+  /* animate the glowingLight and change the color every 2 seconds */
   -webkit-animation: particle 4.95s linear -3.3s infinite alternate;
 }
 .rotate .angle:nth-child(2) .position{
@@ -211,7 +212,7 @@
   -webkit-animation: size 6.88s steps(4) -5.16s infinite alternate;
 }
 .rotate .angle:nth-child(3) .particle{
-  /* animate the glow and change the color every 2 seconds */
+  /* animate the glowingLight and change the color every 2 seconds */
   -webkit-animation: particle 5.16s linear -1.72 infinite alternate;
 }
 .rotate .angle:nth-child(3) .position{

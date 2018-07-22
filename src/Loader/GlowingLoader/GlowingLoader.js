@@ -9,7 +9,7 @@ class GlowingLoader extends Component {
         <AppEffect>
 
 <div className="glowingLoaderContainer"></div>
-<div className="glowingLoaderParticles">
+<div className="particles">
 
  <div className="rotate">
 
