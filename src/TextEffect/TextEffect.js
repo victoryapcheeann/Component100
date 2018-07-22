@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import './TextEffect.css';
 import AppEffect from '../AppEffect'
 
-import Sample from './Sample/Sample'
+import StunningHoverEffect from './StunningHoverEffect/StunningHoverEffect';
+import StunningTextInputEffect from './StunningTextInputEffect/StunningTextInputEffect';
 
 class TextEffect extends Component {
   constructor() {
     super();
     this.state = {
-      currentTextEffectComponent : Sample
+      currentTextEffectComponent : StunningHoverEffect
     }
   }
 
@@ -24,7 +25,8 @@ class TextEffect extends Component {
         <div className="columnStyle">
           <span>TextEffect</span>
           <div className="rowStyle subComponentButtonContainer">
-            <button className='appButtonStyle' onClick={() => this.renderComponent(Sample)}>Sample</button>
+            <button className='appButtonStyle' onClick={() => this.renderComponent(StunningHoverEffect)}>Stunning Hover Effect</button>
+            <button className='appButtonStyle' onClick={() => this.renderComponent(StunningTextInputEffect)}>Stunning Text Input Effect</button>
           </div>
           <this.state.currentTextEffectComponent />
         </div>

@@ -15,6 +15,9 @@ import TextEffect from './TextEffect/TextEffect';
 import TransitionEffect from './TransitionEffect/TransitionEffect';
 import Weather from './Weather/Weather';
 
+import FaCodepen from 'react-icons/lib/fa/codepen';
+import FaDribbble from 'react-icons/lib/fa/dribbble';
+
 class App extends Component {
   constructor() {
     super();
@@ -32,11 +35,24 @@ class App extends Component {
   render() {
     return (
       <div className='mainContainer columnStyle'>
-        <div className='appTitleStyle rowStyle'>
+        <div className='rowStyle'>
           <Planet size={80} mood="happy" color="#FCCB7E" text="I'm a planet!" showTextOnHover={true} />
-          <h1>Component100</h1>
+          <div className='columnStyle'>
+            <h1>Component100</h1>
+            <span className="miniTextStyle">Non-responsive, please view it on desktop</span>
+          </div>
         </div>
-        <span>Choose one of the cateogry!</span>
+          <div className="rowStyle marginTopStyle">
+            <span className="marginRightStyle">Source of knowledge:</span>
+            <a href="https://codepen.io/"><FaCodepen size={50} color="black" className="marginRightStyle"/></a>
+            <a href="https://tympanus.net/codrops/">
+              <img className="codropIconSize marginRightStyle" src="/codrop.png"/>
+            </a>
+            <a href="https://dribbble.com/"><FaDribbble size={50} color="pink"/></a>
+          </div>
+        <span className="marginTopStyle">
+          Choose one of the cateogry!
+        </span>
         <div className='appButtonRowStyle'>
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Button)}>Button</button>
                   <button className='appButtonStyle' onClick={() => this.renderComponent(DataDisplay)}>Data Display</button>
