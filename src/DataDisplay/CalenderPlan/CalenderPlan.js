@@ -45,7 +45,7 @@ class Sample extends Component {
       </h3>
       <div className="events-wrapper">
          <div className="event">
-            <i className="ion hot"><IoBonfire /></i>
+            <i className><IoBonfire color="orange"/></i>
             <h4 className="event__point">11:00 am</h4>
             <span className="event__duration">in 30 minutes.</span>
             <p className="event__description">
