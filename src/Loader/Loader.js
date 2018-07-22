@@ -5,7 +5,6 @@ import AppEffect from '../AppEffect'
 import SquareLoader from './SquareLoader/SquareLoader';
 import GlowingLoader from './GlowingLoader/GlowingLoader';
 import StaircaseLoader from './StaircaseLoader/StaircaseLoader';
-import Sample from './Sample/Sample';
 
 class Loader extends Component {
   constructor() {

@@ -15,6 +15,10 @@ import Tada from 'react-reveal/Tada';
 
 var effectArray = [
   Fade, Fade, Fade, Fade, Fade, Fade, Fade, Fade, Fade, Fade, Fade,
+  Fade, Fade, Fade, Fade, Fade, Fade, Fade, Fade, Fade, Fade, Fade,
+  Fade, Fade, Fade, Fade, Fade, Fade, Fade, Fade, Fade, Fade, Fade,
+  Fade, Fade, Fade, Fade, Fade, Fade, Fade, Fade, Fade, Fade, Fade,
+  Fade, Fade, Fade, Fade, Fade, Fade, Fade, Fade, Fade, Fade, Fade,
   Jump, HeadShake, Jello, Pulse, RubberBand, Shake, Swing, Tada,
   Bounce, Slide, LightSpeed, Zoom
 ];

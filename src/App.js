@@ -50,7 +50,7 @@ class App extends Component {
             <a href="https://dribbble.com/"><FaDribbble size={50} color="pink"/></a>
           </div>
         <span className="marginTopStyle">
-          Choose one of the cateogry!
+          Choose from one of the cateogry!
         </span>
         <div className='appButtonRowStyle'>
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Button)}>Button</button>

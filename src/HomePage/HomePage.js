@@ -3,7 +3,8 @@ import './HomePage.css';
 import AppEffect from '../AppEffect';
 
 import Colourful2018 from './Colourful2018/Colourful2018';
-import Sample from './Sample/Sample';
+import LoginPage from './LoginPage/LoginPage';
+import Timeline from './Timeline/Timeline';
 
 class HomePage extends Component {
   constructor() {
@@ -26,6 +27,8 @@ class HomePage extends Component {
           <span>HomePage</span>
           <div className="rowStyle subComponentButtonContainer">
             <button className='appButtonStyle' onClick={() => this.renderComponent(Colourful2018)}>Colorful 2018</button>
+            <button className='appButtonStyle' onClick={() => this.renderComponent(LoginPage)}>Login Page</button>
+            <button className='appButtonStyle' onClick={() => this.renderComponent(Timeline)}>Timeline</button>
           </div>
           <this.state.currentHomePageComponent />
         </div>

@@ -5,7 +5,6 @@ import AppEffect from '../AppEffect'
 import ImageHoverEffect1 from './ImageHoverEffect1/ImageHoverEffect1'
 import ImageHoverEffect2 from './ImageHoverEffect2/ImageHoverEffect2'
 import OnClickImageGallery from './OnClickImageGallery/OnClickImageGallery'
-import Sample from './Sample/Sample'
 
 class Image extends Component {
   constructor() {
