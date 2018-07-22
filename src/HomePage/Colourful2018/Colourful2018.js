@@ -5,7 +5,7 @@ import AppEffect from '../../AppEffect'
 class Colourful2018 extends Component {
   render() {
     return (
-        <AppEffect classNameNameName="homePage2018">
+        <AppEffect className="homePage2018">
         <div className="homePage2018Wrapper">
         	<div className="homePage2018Card">
         		<div className="card__year">

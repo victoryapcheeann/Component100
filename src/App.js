@@ -10,9 +10,6 @@ import HomePage from './HomePage/HomePage';
 import Icon from './Icon/Icon';
 import Image from './Image/Image';
 import Loader from './Loader/Loader';
-import Menu from './Menu/Menu';
-import Profile from './Profile/Profile';
-import RandomStuff from './RandomStuff/RandomStuff';
 import Slider from './Slider/Slider';
 import TextEffect from './TextEffect/TextEffect';
 import TransitionEffect from './TransitionEffect/TransitionEffect';
@@ -48,9 +45,6 @@ class App extends Component {
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Icon)}>Icon</button>
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Image)}>Image</button>
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Loader)}>Loader</button>
-                  <button className='appButtonStyle' onClick={() => this.renderComponent(Menu)}>Menu</button>
-                  <button className='appButtonStyle' onClick={() => this.renderComponent(Profile)}>Profile</button>
-                  <button className='appButtonStyle' onClick={() => this.renderComponent(RandomStuff)}>Random Stuff</button>
                   <button className='appButtonStyle' onClick={() => this.renderComponent(Slider)}>Slider</button>
                   <button className='appButtonStyle' onClick={() => this.renderComponent(TextEffect)}>Text Effect</button>
                   <button className='appButtonStyle' onClick={() => this.renderComponent(TransitionEffect)}>Transition Effect</button>
